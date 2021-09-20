@@ -1,5 +1,6 @@
 * {  
 box-sizing: border-box;
+border: 1px dotted red;
 }
 
 html, body {
@@ -8,10 +9,24 @@ html, body {
 
  body {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
+    min-height: 100vh;
     background: linear-gradient(to right top, #d16ba5, #c777b9, #ba83ca, #aa8fd8, #9a9ae1, #8aa7ec, #79b3f4, #69bff8, #52cffe, #41dfff, #46eefa, #5ffbf1);;
     margin: 0;
+  }
+
+  header, footer {
+      display: flex;
+      align-items: : center;
+      height 3.125rem;
+  }
+
+  main {
+      flex-grow: 1;
+      display: flex;
+      flex-wrap: wrap;
   }
 
 
@@ -19,6 +34,7 @@ html, body {
   #title h1 {
     border: 2px solid limegreen;
     font-family: 'Cherish', cursive;
+    width: 50px;
     font-size: 80px;
     position: relative;
     margin-left: 300px;
