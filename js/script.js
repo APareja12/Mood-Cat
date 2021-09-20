@@ -14,10 +14,19 @@ function handleGetData(ev) {
     const mood = $input.val();
     $input.val("");
 
-    $.ajax(`${BASE_URL}?api_key=${API_KEY}&limit=1&q=${mood}`).then(function (data) {
-   
+    $.ajax(`${BASE_URL}?api_key=${API_KEY}&limit=1&q=${mood} + cat`).then(function (data) {
+        console.log(data);
+        giphyData = data; 
+        render(giphyData);
+
+        if (data.data.length) {
+            console.log(data);
         giphyData = data; 
         render();
+         }
+        else {
+
+        };
         
     }, function (error) {
         
@@ -25,7 +34,6 @@ function handleGetData(ev) {
     });
 }
 
-function render() {
-    $title.text(giphyData.Title);
-    
+function render(data) {
+    $('img').attr('src', data.data[0].images.fixed_height.url)
 }
