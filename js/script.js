@@ -9,27 +9,26 @@ $form.on('submit', handleGetData)
 
 function handleGetData(ev) {
 
-    ev.preventDefault(); 
-    
+    ev.preventDefault();
+
     const mood = $input.val();
     $input.val("");
 
     $.ajax(`${BASE_URL}?api_key=${API_KEY}&limit=1&q=${mood} + cat`).then(function (data) {
         console.log(data);
-        giphyData = data; 
+        giphyData = data;
         render(giphyData);
 
         if (data.data.length) {
             console.log(data);
-        giphyData = data; 
-        render();
-         }
-        else {
+            giphyData = data;
+            render();
+        } else {
 
         };
-        
+
     }, function (error) {
-        
+
         console.log(error);
     });
 }

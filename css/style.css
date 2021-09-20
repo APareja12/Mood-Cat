@@ -33,13 +33,10 @@ html, body {
 
   #title h1 {
     border: 2px solid limegreen;
-    font-family: 'Cherish', cursive;
-    width: 50px;
+    font-family: 'Bebas Neue', cursive;
     font-size: 80px;
     position: relative;
-    margin-left: 300px;
     display: inline-block;
-    margin-bottom: 300px;
 }
 
 #result {
@@ -53,7 +50,6 @@ input {
 }
 
 #submit {
-    margin-right: auto;
     z-index: 2;
   }
   /* 
