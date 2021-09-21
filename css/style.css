@@ -11,12 +11,25 @@ body {
 body {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    /* justify-content: center;
+    align-items: center; */
     min-height: 100vh;
     background: linear-gradient(to right top, #d16ba5, #c777b9, #ba83ca, #aa8fd8, #9a9ae1, #8aa7ec, #79b3f4, #69bff8, #52cffe, #41dfff, #46eefa, #5ffbf1);
     ;
     margin: 0;
+}
+
+header {
+    padding: 2rem;
+    margin-top: 1rem;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+footer {
+    justify-content: center;
+    align-items: center;
 }
 
 header,
@@ -30,7 +43,7 @@ footer {
     width: 600px;
     border: 2px solid limegreen;
     font-family: 'Bebas Neue', cursive;
-    font-size: 70px;
+    font-size: 60px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -48,13 +61,16 @@ h1 {
 
 main {
     flex-grow: 1;
+    margin-top: 2rem;
+    justify-content: center;
+    align-items: center;
     display: flex;
     flex-wrap: wrap;
 }
 
 #result {
     display: flex;
-    height: 100px;
+    /* height: 100px; */
 }
 
 img {
@@ -74,7 +90,9 @@ img {
 
 input {
     width: 250px;
-    font-size: 18px;;
+    font-size: 18px;
+    justify-content: center;
+    align-items: center;
 
 }
 
@@ -82,6 +100,8 @@ input {
     z-index: 2;
     display: flex;
     flex-direction: row;
+    justify-content: center;
+    align-items: center;
     
 }
 
