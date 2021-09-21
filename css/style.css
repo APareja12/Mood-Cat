@@ -1,69 +1,95 @@
-* {  
-box-sizing: border-box;
-border: 1px dotted red;
+* {
+    box-sizing: border-box;
+    border: 1px dotted red;
 }
 
-html, body {
+html,
+body {
     height: 100%;
 }
 
- body {
+body {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    background: linear-gradient(to right top, #d16ba5, #c777b9, #ba83ca, #aa8fd8, #9a9ae1, #8aa7ec, #79b3f4, #69bff8, #52cffe, #41dfff, #46eefa, #5ffbf1);;
+    background: linear-gradient(to right top, #d16ba5, #c777b9, #ba83ca, #aa8fd8, #9a9ae1, #8aa7ec, #79b3f4, #69bff8, #52cffe, #41dfff, #46eefa, #5ffbf1);
+    ;
     margin: 0;
-  }
+}
 
-  header, footer {
-      display: flex;
-      align-items: : center;
-      height 3.125rem;
-  }
+header,
+footer {
+    display: flex;
+    align-items: center;
+    height: 5.125rem;
+}
 
-  main {
-      flex-grow: 1;
-      display: flex;
-      flex-wrap: wrap;
-  }
-
-
-
-  #title h1 {
+#title {
+    width: 600px;
     border: 2px solid limegreen;
     font-family: 'Bebas Neue', cursive;
-    font-size: 80px;
-    position: relative;
-    display: inline-block;
+    font-size: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    letter-spacing: 1.1rem;
+    padding: 0.5rem;
+    margin: 0;
+
+}
+
+main {
+    flex-grow: 1;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 #result {
     display: flex;
-
-
-} 
+    height: 100px;
+}
 
 img {
-    padding: 1rem;
+    height: 260px;
+    box-shadow: rgba(240, 46, 170, 0.4) 5px 5px, rgba(240, 46, 170, 0.3) 10px 10px, rgba(240, 46, 170, 0.2) 15px 15px, rgba(240, 46, 170, 0.1) 20px 20px, rgba(240, 46, 170, 0.05) 25px 25px;
+}
+
+#container {
+    display: flex;
+    /* flex-direction: row; */
+    width: 90%;
+    justify-content: center;
+    border-radius: 25px;
+    /* align-items: center; */
+    border: solid black 3px;
 }
 
 input {
-    width: 200px;
+    width: 250px;
+    font-size: 18px;;
+
 }
 
 #submit {
     z-index: 2;
-   display: flex;
-   flex-direction: row;
- }
+    display: flex;
+    flex-direction: row;
+    
+}
 
- form {
-     display: flex;
- }
+form {
+    display: flex;
+}
 
-  .button {
+button {
     cursor: pointer;
     width: 150px;
     height: 50px;
@@ -71,38 +97,58 @@ input {
     border-radius: 50px;
     background: linear-gradient(90deg, #fcff9e 0%, #c67700 100%);
     animation: gradient 2.5s infinite 0.8s cubic-bezier(0.2, 0.8, 0.2, 1.2) forwards;
-    
+
     padding-top: 16px;
+    padding-left: px;
     display: flex;
     flex-direction: row;
     justify-content: center;
-    align-items: center;  
-    font-size: 40px;
-  }
-  
-  @keyframes gradient {
-    0% { background: linear-gradient(90deg, #00d2ff 0%, #3a47d5 100%) }
-    10% { background: linear-gradient(90deg, #d53369 0%, #daae51 100%) }
-    20% { background: linear-gradient(90deg, #FDBB2D 0%, #3A1C71 100%) }
-    30% { background: linear-gradient(90deg, #FDBB2D 0%, #22C1C3 100%) }
-    40% { background: linear-gradient(90deg, #f8ff00 0%, #3ad59f 100%) }
-    50% { background: linear-gradient(90deg, #00C9FF 0%, #92FE9D 100%) }
-    60% { background: linear-gradient(90deg, #0700b8 0%, #00ff88 100%) }
-    70% { background: linear-gradient(90deg, #3F2B96 0%, #A8C0FF 100%) }
-    80% { background: linear-gradient(90deg, #FC466B 0%, #3F5EFB 100%) }
-    90% { background: linear-gradient(90deg, #4b6cb7 0%, #182848 100%) }
-    100% { background: linear-gradient(90deg, #00d2ff 0%, #3a47d5 100%) }
-  }
-  }
-  /* 
-  .container{
-    display: flex;
-    flex-direction: column;
-    height: 100%;
-    width: 100%;
-    justify-content: center;
-    border-radius: 25px;
     align-items: center;
-    border: solid black 3px;
-    background-image: linear-gradient(to right bottom, #ab0f67, #a72982, #9e3e9d, #8d51b4, #7562c9, #5e75da, #4087e8, #0098f1, #00aef7, #00c2f2, #00d4e6, #22e3d7);
-    } */
+    font-size: 40px;
+}
+
+@keyframes gradient {
+    0% {
+        background: linear-gradient(90deg, #00d2ff 0%, #3a47d5 100%)
+    }
+
+    10% {
+        background: linear-gradient(90deg, #d53369 0%, #daae51 100%)
+    }
+
+    20% {
+        background: linear-gradient(90deg, #FDBB2D 0%, #3A1C71 100%)
+    }
+
+    30% {
+        background: linear-gradient(90deg, #FDBB2D 0%, #22C1C3 100%)
+    }
+
+    40% {
+        background: linear-gradient(90deg, #f8ff00 0%, #3ad59f 100%)
+    }
+
+    50% {
+        background: linear-gradient(90deg, #00C9FF 0%, #92FE9D 100%)
+    }
+
+    60% {
+        background: linear-gradient(90deg, #0700b8 0%, #00ff88 100%)
+    }
+
+    70% {
+        background: linear-gradient(90deg, #3F2B96 0%, #A8C0FF 100%)
+    }
+
+    80% {
+        background: linear-gradient(90deg, #FC466B 0%, #3F5EFB 100%)
+    }
+
+    90% {
+        background: linear-gradient(90deg, #4b6cb7 0%, #182848 100%)
+    }
+
+    100% {
+        background: linear-gradient(90deg, #00d2ff 0%, #3a47d5 100%)
+    }
+}
