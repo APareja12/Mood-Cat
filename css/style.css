@@ -51,6 +51,7 @@ footer {
 h1 {
     display: flex;
     justify-content: center;
+    font-size: 165px;
     align-items: center;
     letter-spacing: 1.2rem;
     padding: 0.5rem;
@@ -93,6 +94,14 @@ main {
     
 }
 
+.stripes {
+    width: 500px;
+    animation: rotating 3s linear infinite;
+    position: fixed;
+    right: 10px;
+    top: 50px;
+}
+
 #result {
     display: flex;
     /* height: 100px; */
@@ -101,6 +110,7 @@ main {
 .gifbox {
     z-index: 1;
     height: 260px;
+    width: 400px;
     box-shadow: rgba(240, 46, 170, 0.4) 5px 5px, rgba(240, 46, 170, 0.3) 10px 10px, rgba(240, 46, 170, 0.2) 15px 15px, rgba(240, 46, 170, 0.1) 20px 20px, rgba(240, 46, 170, 0.05) 25px 25px;
 }
 

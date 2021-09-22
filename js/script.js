@@ -1,15 +1,15 @@
 const BASE_URL = 'https://api.giphy.com/v1/gifs/search'
 const API_KEY = 'uL30YyxEKwqrmQlzV1eez0N8fYH4rfCn'
-
+const notFoundGif = 'https://media.giphy.com/media/3o6ZsYWUAvzZF4I5Xy/giphy.gif'
 const $form = $('form');
 const $input = $('input[type="text"]');
-const limit =20
+const limit = 20
 const $gifbox = $('.gifbox')
 
 
 $form.on('submit', handleGetData)
 
-const getRandNumBetween = (min,max) => Math.floor(Math.random()*(max-min+1)+min)
+const getRandNumBetween = (min, max) => Math.floor(Math.random() * (max - min + 1) + min)
 
 function handleGetData(ev) {
 
@@ -19,7 +19,7 @@ function handleGetData(ev) {
     $input.val("");
 
     $.ajax(`${BASE_URL}?api_key=${API_KEY}&limit=${limit}&q=${mood} + cat`).then(function (data) {
-        const randomIndex = getRandNumBetween(0, limit -1);
+        const randomIndex = getRandNumBetween(0, limit - 1);
         // const randomGif = data.data[randomIndex].images.fixed_height.url;
 
         if (data.data.length) {
@@ -29,7 +29,7 @@ function handleGetData(ev) {
         } else {
             render(notFoundGif)
             $input.val("Not a Cat!!")
-    };
+        };
 
     }, function (error) {
 
@@ -40,4 +40,5 @@ function handleGetData(ev) {
 $form.on('submit', handleGetData)
 
 function render(data) {
-    $gifbox.attr('src', data)}
+    $gifbox.attr('src', data)
+}
