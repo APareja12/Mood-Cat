@@ -10,7 +10,10 @@ Allows user to have their current mood displayed by a cat meme.
 
 # Screenshots
 ![screenshot 1](./screenshot.png)
-# Getting Started 
+# Getting Started
+
+Enter how you are feeling in the form and press the cat icon to get a result. 
 
 # Future Enhancements
 
+Add animations in the background. 

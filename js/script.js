@@ -4,6 +4,7 @@ const API_KEY = 'uL30YyxEKwqrmQlzV1eez0N8fYH4rfCn'
 const $form = $('form');
 const $input = $('input[type="text"]');
 const limit =20
+const $gifbox = $('.gifbox')
 
 
 $form.on('submit', handleGetData)
@@ -39,4 +40,4 @@ function handleGetData(ev) {
 $form.on('submit', handleGetData)
 
 function render(data) {
-    $('img').attr('src', data)}
+    $gifbox.attr('src', data)}

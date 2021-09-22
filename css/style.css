@@ -1,6 +1,6 @@
 * {
     box-sizing: border-box;
-    border: 1px dotted red;
+    /* border: 1px dotted red; */
 }
 
 html,
@@ -11,17 +11,16 @@ body {
 body {
     display: flex;
     flex-direction: column;
-    /* justify-content: center;
-    align-items: center; */
+    align-items: center;
     min-height: 100vh;
-    background: linear-gradient(to right top, #d16ba5, #c777b9, #ba83ca, #aa8fd8, #9a9ae1, #8aa7ec, #79b3f4, #69bff8, #52cffe, #41dfff, #46eefa, #5ffbf1);
-    ;
+    background-image: linear-gradient(to right bottom, #d16ba5, #c777b9, #ba83ca, #aa8fd8, #9a9ae1, #8aa7ec, #79b3f4, #69bff8, #52cffe, #41dfff, #46eefa, #5ffbf1);
     margin: 0;
 }
 
 header {
+    display: flex;
     padding: 2rem;
-    margin-top: 1rem;
+    margin-top: 3rem;
     justify-content: center;
     align-items: center;
     
@@ -41,9 +40,9 @@ footer {
 
 #title {
     width: 600px;
-    border: 2px solid limegreen;
+    /* border: 2px solid limegreen; */
     font-family: 'Bebas Neue', cursive;
-    font-size: 60px;
+    font-size: 65px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -53,7 +52,7 @@ h1 {
     display: flex;
     justify-content: center;
     align-items: center;
-    letter-spacing: 1.1rem;
+    letter-spacing: 1.2rem;
     padding: 0.5rem;
     margin: 0;
 
@@ -68,12 +67,28 @@ main {
     flex-wrap: wrap;
 }
 
+.cat {
+    display: flex;
+    position: fixed;
+    width: 500px;
+    left: 0px;
+    bottom: -2px;
+    z-index: 0;
+}
+
+.tabby {
+    display: flex;
+    position: relative;
+
+}
+
 #result {
     display: flex;
     /* height: 100px; */
 }
 
-img {
+.gifbox {
+    z-index: 1;
     height: 260px;
     box-shadow: rgba(240, 46, 170, 0.4) 5px 5px, rgba(240, 46, 170, 0.3) 10px 10px, rgba(240, 46, 170, 0.2) 15px 15px, rgba(240, 46, 170, 0.1) 20px 20px, rgba(240, 46, 170, 0.05) 25px 25px;
 }
@@ -85,7 +100,7 @@ img {
     justify-content: center;
     border-radius: 25px;
     /* align-items: center; */
-    border: solid black 3px;
+    /* border: solid black 3px; */
 }
 
 input {
@@ -119,12 +134,15 @@ button {
     animation: gradient 2.5s infinite 0.8s cubic-bezier(0.2, 0.8, 0.2, 1.2) forwards;
 
     padding-top: 16px;
-    padding-left: px;
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
     font-size: 40px;
+}
+
+#press {
+    padding-left: 20px;
 }
 
 @keyframes gradient {
