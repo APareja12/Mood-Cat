@@ -2,6 +2,12 @@
 
 Allows user to have their current mood displayed by a cat meme. 
 
+# Getting Started
+
+Enter how you are feeling in the form and press the cat icon to get a result. 
+
+https://mood-cat.netlify.app
+
 # Technolgies Used
 
 - HTML
@@ -15,10 +21,7 @@ Allows user to have their current mood displayed by a cat meme.
 ![screenshot 4](./img/Full-View_Screenshot.png)
 ![screenshot 5](./img/Guru_Screenshot.png)
 
-# Getting Started
-
-Enter how you are feeling in the form and press the cat icon to get a result. 
-
 # Future Enhancements
 
-Add animations in the background. 
+Add various engaging animations in the background. 
+ 

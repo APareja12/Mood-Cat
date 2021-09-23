@@ -20,10 +20,8 @@ function handleGetData(ev) {
 
     $.ajax(`${BASE_URL}?api_key=${API_KEY}&limit=${limit}&q=${mood} + cat`).then(function (data) {
         const randomIndex = getRandNumBetween(0, limit - 1);
-        // const randomGif = data.data[randomIndex].images.fixed_height.url;
 
         if (data.data.length) {
-            console.log(data);
             giphyData = data;
             render(data.data[randomIndex].images.fixed_height.url);
         } else {
