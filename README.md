@@ -23,5 +23,6 @@ https://mood-cat.netlify.app
 
 # Future Enhancements
 
+Add mobile responsiveness
 Add various engaging animations in the background. 
  
